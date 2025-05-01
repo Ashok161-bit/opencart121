@@ -17,9 +17,9 @@ public class TC001_Registration extends BaseClass{
 		try {
 		
 		HomePage hp= new HomePage(driver);
-		hp.myaccount();
+		hp.clickMyAccount();
 		logger.info("Clicked on Myaccount Link");
-		hp.Register();	
+		hp.clickRegister();	
 		logger.info("Clicked on Registared Link");
 		AccountRegistationPage regpage=new AccountRegistationPage(driver);
 		

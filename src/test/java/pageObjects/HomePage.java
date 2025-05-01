@@ -6,44 +6,52 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
 
-	
-	//constractor
+	 
 
-		public HomePage(WebDriver driver) {
-		super(driver);
-		// TODO Auto-generated constructor stub
+	    // Constructor
+	    public HomePage(WebDriver driver) {
+	        super(driver);
+	    }
+
+	    // Elements
+	    @FindBy(xpath = "//a[@title='My Account']")
+	    WebElement myAccount;
+
+	    @FindBy(xpath = "//a[normalize-space()='Register']")
+	    WebElement register;
+
+	    @FindBy(xpath = "//a[normalize-space()='Login']")
+	    WebElement login;
+
+	    @FindBy(xpath = "//input[@placeholder='Search']")
+	    WebElement enterText;
+
+	    @FindBy(xpath = "//button[@class='btn btn-default btn-lg']")
+	    WebElement searchButton;
+
+	    // Actions
+	    public void clickMyAccount() {
+	        myAccount.click();
+	    }
+
+	    public void clickRegister() {
+	        register.click();
+	    }
+
+	    public void clickLogin() {
+	        login.click();
+	    }
+
+	    public void enterProductName(String product) {
+	        enterText.clear();
+	        enterText.sendKeys(product);
+	    }
+
+	    public void clickSearch() {
+	        searchButton.click();
+	    }
 	}
-		
-		
-	//elements
-	@FindBy(xpath=("//a[@title='My Account']"))
-	WebElement My_Account;
-	
-	@FindBy(xpath=("//a[normalize-space()='Register']"))
-	WebElement Register;
-		
-	@FindBy(xpath=("//a[normalize-space()='Login']"))
-	WebElement login;
-			
-	
-     // Action Method
-     public void myaccount() {
-	  
-    	 My_Account.click();
-	  
-  }
-   
-    public void Register() {
-    	Register.click();
-    }
-   
-    public void clickloginButton() {
-    	login.click();
-    }
-	
-	
-}
-	
+
 	
 	
 

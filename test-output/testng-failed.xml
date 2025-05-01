@@ -15,6 +15,13 @@
           <include name="TearDown"/>
         </methods>
       </class> <!-- testCases.TC003_Login_DDT -->
+      <class name="testCases.TC005_AddToCartPage">
+        <methods>
+          <include name="verify_addToCart"/>
+          <include name="Setup"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- testCases.TC005_AddToCartPage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

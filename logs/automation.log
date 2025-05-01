@@ -223,3 +223,117 @@
 11:45:16.354 [main] INFO  testCases.TC003_Login_DDT - ******* Starting TC_003_LogingDDT*****
 11:45:28.174 [main] INFO  testCases.TC003_Login_DDT - ******* Finished TC_003_LogingDDT*****
 11:45:28.174 [main] INFO  testCases.TC003_Login_DDT - ******* Starting TC_003_LogingDDT*****
+17:15:57.371 [main] INFO  testCases.TC001_Registration - ******* starting TC001_AccountRegistationTest*********
+17:15:57.451 [main] INFO  testCases.TC001_Registration - Clicked on Myaccount Link
+17:15:58.048 [main] INFO  testCases.TC001_Registration - Clicked on Registared Link
+17:15:58.049 [main] INFO  testCases.TC001_Registration - provideing customer details
+17:15:58.448 [main] INFO  testCases.TC001_Registration - Validating expected Message.......
+17:15:59.366 [main] INFO  testCases.TC001_Registration - *****Tc001_AccountRegistationtestFinished******
+17:16:03.507 [main] INFO  testCases.TC002_LoginTest - *****Starting TC_002_Logintest****
+17:16:04.836 [main] INFO  testCases.TC002_LoginTest - *****Finishing TC_002_Logintest***********
+17:16:10.250 [main] INFO  testCases.TC_004_searchproduct - Starting TC004_Searchproduct
+17:20:19.858 [main] INFO  testCases.TC001_Registration - ******* starting TC001_AccountRegistationTest*********
+17:20:19.938 [main] INFO  testCases.TC001_Registration - Clicked on Myaccount Link
+17:20:20.531 [main] INFO  testCases.TC001_Registration - Clicked on Registared Link
+17:20:20.532 [main] INFO  testCases.TC001_Registration - provideing customer details
+17:20:20.955 [main] INFO  testCases.TC001_Registration - Validating expected Message.......
+17:20:21.991 [main] INFO  testCases.TC001_Registration - *****Tc001_AccountRegistationtestFinished******
+17:20:25.007 [main] INFO  testCases.TC002_LoginTest - *****Starting TC_002_Logintest****
+17:20:26.499 [main] INFO  testCases.TC002_LoginTest - *****Finishing TC_002_Logintest***********
+17:20:29.223 [main] INFO  testCases.TC_004_searchproduct - Starting TC004_Searchproduct
+17:28:34.479 [main] INFO  testCases.TC001_Registration - ******* starting TC001_AccountRegistationTest*********
+17:28:34.557 [main] INFO  testCases.TC001_Registration - Clicked on Myaccount Link
+17:28:35.115 [main] INFO  testCases.TC001_Registration - Clicked on Registared Link
+17:28:35.116 [main] INFO  testCases.TC001_Registration - provideing customer details
+17:28:35.519 [main] INFO  testCases.TC001_Registration - Validating expected Message.......
+17:28:36.362 [main] INFO  testCases.TC001_Registration - *****Tc001_AccountRegistationtestFinished******
+17:28:40.005 [main] INFO  testCases.TC_004_searchproduct - Starting TC004_Searchproduct
+18:04:57.812 [main] INFO  testCases.TC001_Registration - ******* starting TC001_AccountRegistationTest*********
+18:04:57.886 [main] INFO  testCases.TC001_Registration - Clicked on Myaccount Link
+18:04:58.856 [main] INFO  testCases.TC001_Registration - Clicked on Registared Link
+18:04:58.857 [main] INFO  testCases.TC001_Registration - provideing customer details
+18:05:00.075 [main] INFO  testCases.TC001_Registration - Validating expected Message.......
+18:05:00.104 [main] INFO  testCases.TC001_Registration - *****Tc001_AccountRegistationtestFinished******
+18:05:03.894 [main] INFO  testCases.TC_004_searchproduct - Starting TC004_Searchproduct
+18:20:18.216 [main] INFO  testCases.TC001_Registration - ******* starting TC001_AccountRegistationTest*********
+18:20:18.315 [main] INFO  testCases.TC001_Registration - Clicked on Myaccount Link
+18:20:19.054 [main] INFO  testCases.TC001_Registration - Clicked on Registared Link
+18:20:19.056 [main] INFO  testCases.TC001_Registration - provideing customer details
+18:20:20.703 [main] INFO  testCases.TC001_Registration - Validating expected Message.......
+18:20:20.734 [main] INFO  testCases.TC001_Registration - *****Tc001_AccountRegistationtestFinished******
+18:20:28.093 [main] INFO  testCases.TC_004_searchproduct - Starting TC004_Searchproduct
+18:20:31.403 [main] INFO  testCases.TC_004_searchproduct - finished TC_004_Searchprocuct
+18:22:47.405 [main] INFO  testCases.TC001_Registration - ******* starting TC001_AccountRegistationTest*********
+18:22:47.500 [main] INFO  testCases.TC001_Registration - Clicked on Myaccount Link
+18:22:48.504 [main] INFO  testCases.TC001_Registration - Clicked on Registared Link
+18:22:48.506 [main] INFO  testCases.TC001_Registration - provideing customer details
+18:22:50.016 [main] INFO  testCases.TC001_Registration - Validating expected Message.......
+18:22:50.044 [main] INFO  testCases.TC001_Registration - *****Tc001_AccountRegistationtestFinished******
+18:22:59.279 [main] INFO  testCases.TC_004_searchproduct - Starting TC004_Searchproduct
+18:23:10.804 [main] INFO  testCases.TC_004_searchproduct - finished TC_004_Searchprocuct
+11:34:08.252 [main] INFO  testCases.TC001_Registration - ******* starting TC001_AccountRegistationTest*********
+11:34:08.327 [main] INFO  testCases.TC001_Registration - Clicked on Myaccount Link
+11:34:08.826 [main] INFO  testCases.TC001_Registration - Clicked on Registared Link
+11:34:08.839 [main] INFO  testCases.TC001_Registration - provideing customer details
+11:34:09.972 [main] INFO  testCases.TC001_Registration - Validating expected Message.......
+11:34:10.000 [main] INFO  testCases.TC001_Registration - *****Tc001_AccountRegistationtestFinished******
+11:34:13.517 [main] INFO  testCases.TC004_Searchproduct - Starting TC004_Searchproduct
+11:34:14.113 [main] INFO  testCases.TC004_Searchproduct - finished TC_004_Searchprocuct
+11:34:16.816 [main] INFO  testCases.TC005_AddToCartPage - Starting TC004_AddRToCartPage
+11:35:41.213 [main] INFO  testCases.TC004_Searchproduct - Starting TC004_Searchproduct
+11:35:41.799 [main] INFO  testCases.TC004_Searchproduct - finished TC_004_Searchprocuct
+11:35:45.076 [main] INFO  testCases.TC005_AddToCartPage - Starting TC004_AddRToCartPage
+11:38:58.099 [main] INFO  testCases.TC005_AddToCartPage - Starting TC004_AddRToCartPage
+11:39:38.148 [main] INFO  testCases.TC004_Searchproduct - Starting TC004_Searchproduct
+11:39:38.755 [main] INFO  testCases.TC004_Searchproduct - finished TC_004_Searchprocuct
+11:39:41.879 [main] INFO  testCases.TC005_AddToCartPage - Starting TC004_AddRToCartPage
+11:45:15.648 [main] INFO  testCases.TC004_Searchproduct - Starting TC004_Searchproduct
+11:45:16.408 [main] INFO  testCases.TC004_Searchproduct - finished TC_004_Searchprocuct
+11:45:18.936 [main] INFO  testCases.TC005_AddToCartPage - Starting TC004_AddRToCartPage
+11:45:20.236 [main] INFO  testCases.TC005_AddToCartPage - Finished TC004_AddRToCartPage
+11:48:33.011 [main] INFO  testCases.TC001_Registration - ******* starting TC001_AccountRegistationTest*********
+11:48:33.086 [main] INFO  testCases.TC001_Registration - Clicked on Myaccount Link
+11:48:33.781 [main] INFO  testCases.TC001_Registration - Clicked on Registared Link
+11:48:33.784 [main] INFO  testCases.TC001_Registration - provideing customer details
+11:48:34.842 [main] INFO  testCases.TC001_Registration - Validating expected Message.......
+11:48:34.868 [main] INFO  testCases.TC001_Registration - *****Tc001_AccountRegistationtestFinished******
+11:48:37.430 [main] INFO  testCases.TC002_LoginTest - *****Starting TC_002_Logintest****
+11:48:38.588 [main] INFO  testCases.TC002_LoginTest - *****Finishing TC_002_Logintest***********
+11:48:41.739 [main] INFO  testCases.TC003_Login_DDT - ******* Starting TC_003_LogingDDT*****
+11:48:43.238 [main] INFO  testCases.TC003_Login_DDT - ******* Finished TC_003_LogingDDT*****
+11:48:43.240 [main] INFO  testCases.TC003_Login_DDT - ******* Starting TC_003_LogingDDT*****
+11:48:53.706 [main] INFO  testCases.TC003_Login_DDT - ******* Finished TC_003_LogingDDT*****
+11:48:53.706 [main] INFO  testCases.TC003_Login_DDT - ******* Starting TC_003_LogingDDT*****
+11:49:04.418 [main] INFO  testCases.TC003_Login_DDT - ******* Finished TC_003_LogingDDT*****
+11:49:04.418 [main] INFO  testCases.TC003_Login_DDT - ******* Starting TC_003_LogingDDT*****
+11:49:18.497 [main] INFO  testCases.TC004_Searchproduct - Starting TC004_Searchproduct
+11:49:19.102 [main] INFO  testCases.TC004_Searchproduct - finished TC_004_Searchprocuct
+11:49:21.408 [main] INFO  testCases.TC005_AddToCartPage - Starting TC004_AddRToCartPage
+11:54:23.752 [main] INFO  testCases.TC004_Searchproduct - Starting TC004_Searchproduct
+11:54:24.256 [main] INFO  testCases.TC004_Searchproduct - finished TC_004_Searchprocuct
+11:54:26.518 [main] INFO  testCases.TC005_AddToCartPage - Starting TC004_AddRToCartPage
+12:04:02.181 [main] INFO  testCases.TC004_Searchproduct - Starting TC004_Searchproduct
+12:04:02.728 [main] INFO  testCases.TC004_Searchproduct - finished TC_004_Searchprocuct
+12:04:05.046 [main] INFO  testCases.TC005_AddToCartPage - Starting TC004_AddRToCartPage
+12:11:26.671 [main] INFO  testCases.TC004_Searchproduct - Starting TC004_Searchproduct
+12:11:27.301 [main] INFO  testCases.TC004_Searchproduct - finished TC_004_Searchprocuct
+12:11:30.829 [main] INFO  testCases.TC005_AddToCartPage - Starting TC004_AddRToCartPage
+12:11:32.314 [main] INFO  testCases.TC005_AddToCartPage - Finished TC004_AddRToCartPage
+12:14:32.445 [main] INFO  testCases.TC001_Registration - ******* starting TC001_AccountRegistationTest*********
+12:14:32.521 [main] INFO  testCases.TC001_Registration - Clicked on Myaccount Link
+12:14:33.044 [main] INFO  testCases.TC001_Registration - Clicked on Registared Link
+12:14:33.045 [main] INFO  testCases.TC001_Registration - provideing customer details
+12:14:34.080 [main] INFO  testCases.TC001_Registration - Validating expected Message.......
+12:14:34.107 [main] INFO  testCases.TC001_Registration - *****Tc001_AccountRegistationtestFinished******
+12:14:36.320 [main] INFO  testCases.TC002_LoginTest - *****Starting TC_002_Logintest****
+12:14:37.470 [main] INFO  testCases.TC002_LoginTest - *****Finishing TC_002_Logintest***********
+12:14:40.982 [main] INFO  testCases.TC003_Login_DDT - ******* Starting TC_003_LogingDDT*****
+12:14:42.661 [main] INFO  testCases.TC003_Login_DDT - ******* Finished TC_003_LogingDDT*****
+12:14:42.664 [main] INFO  testCases.TC003_Login_DDT - ******* Starting TC_003_LogingDDT*****
+12:14:53.093 [main] INFO  testCases.TC003_Login_DDT - ******* Finished TC_003_LogingDDT*****
+12:14:53.102 [main] INFO  testCases.TC003_Login_DDT - ******* Starting TC_003_LogingDDT*****
+12:15:03.759 [main] INFO  testCases.TC003_Login_DDT - ******* Finished TC_003_LogingDDT*****
+12:15:03.774 [main] INFO  testCases.TC003_Login_DDT - ******* Starting TC_003_LogingDDT*****
+12:15:18.992 [main] INFO  testCases.TC004_Searchproduct - Starting TC004_Searchproduct
+12:15:19.575 [main] INFO  testCases.TC004_Searchproduct - finished TC_004_Searchprocuct
+12:15:22.263 [main] INFO  testCases.TC005_AddToCartPage - Starting TC004_AddRToCartPage
