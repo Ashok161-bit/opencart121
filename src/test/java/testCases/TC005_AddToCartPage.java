@@ -16,8 +16,8 @@ public class TC005_AddToCartPage extends BaseClass{
 		 try {
 					 
 		 HomePage hp= new HomePage(driver);
-		 hp.enterProductName("iphone");
-		 hp.clickSearch();
+		 hp.enterSearchText("iphone");
+		 hp.clickSearchButton();
 		 
 		 SearchProductTest sp= new SearchProductTest(driver);
 		 
@@ -28,7 +28,7 @@ public class TC005_AddToCartPage extends BaseClass{
 			sp.setQuantity("2");
 			sp.addToCart();			 			 
 		 }
-		 Assert.assertEquals(sp.checkConfMessage(), true);
+		 Assert.assertEquals(sp.checkConfirmationMessage(), true);
 		
 	}
 	catch(Exception e) {

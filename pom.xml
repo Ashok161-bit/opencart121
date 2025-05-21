@@ -5,9 +5,38 @@
   <groupId>opencart121</groupId>
   <artifactId>opencart121</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.14.0</version>
+          
+        </plugin>
+        
+        
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.5.3</version>
+          <configuration>
+          
+          <suiteXmlFiles>
+            <suiteXmlFile>master.xml</suiteXmlFile>
+          </suiteXmlFiles>
+          
+          </configuration>
+        </plugin>
+      </plugins>
+      
+          
+    </pluginManagement>
+  </build>
+  
  <dependencies>
  
-  
  <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
@@ -26,13 +55,13 @@
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-  <groupId>org.testng</groupId>
-  <artifactId>testng</artifactId>
-  <version>7.4.0</version>
-  <scope>test</scope>
+    <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.4.0</version>  <!-- Stable and compatible -->
+    <scope>test</scope>
 </dependency>
-
+    
 <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
 <dependency>
     <groupId>org.apache.logging.log4j</groupId>
@@ -71,4 +100,6 @@
     <version>5.1.2</version>
 </dependency>
  </dependencies>
+ 
+  
 </project>

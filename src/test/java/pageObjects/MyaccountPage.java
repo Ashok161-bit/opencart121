@@ -4,38 +4,36 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class MyaccountPage extends BasePage {
+public class MyAccountPage extends BasePage {
 
-	public MyaccountPage(WebDriver driver) {
+	public MyAccountPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
 	}
 
-		
-	@FindBy(xpath=("//h2[normalize-space()='My Account']"))
-	WebElement Msgheading;
-	
-	@FindBy(xpath=("//a[@class='list-group-item'][normalize-space()='Logout']"))
-	WebElement linkLogout;
-	
-	
-	public boolean isMyAccountExist() {
-		
-		try 
-		{
-					
-	       return (Msgheading.isDisplayed());	
-		} 
-		catch(Exception e) {
-			
+	// WebElements
+	@FindBy(xpath = "//h2[normalize-space()='My Account']")
+	private WebElement msgHeading;
+
+	@FindBy(xpath = "//a[@class='list-group-item'][normalize-space()='Logout']")
+	private WebElement linkLogout;
+
+	// Action Methods
+	public boolean isMyAccountDisplayed() {
+		try {
+			return msgHeading.isDisplayed();
+		} catch (Exception e) {
+			System.out.println("Error checking 'My Account' heading: " + e.getMessage());
 			return false;
 		}
-	
-		
 	}
-	
-	public void ClickLogout() {
-		linkLogout.click();
+
+	public void clickLogout() {
+		try {
+			if (linkLogout != null) {
+				linkLogout.click();
+			}
+		} catch (Exception e) {
+			System.out.println("Error clicking 'Logout' link: " + e.getMessage());
+		}
 	}
-	
 }

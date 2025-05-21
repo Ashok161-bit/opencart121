@@ -18,52 +18,83 @@ public class SearchProductTest extends BasePage {
 
     // WebElements
     @FindBy(xpath = "//div[@class='caption']/h4")
-    List<WebElement> productTitles;
+    private List<WebElement> productTitles;
 
     @FindBy(xpath = "//div[@class='caption']/h4/a")
-    List<WebElement> productLinks;
+    private List<WebElement> productLinks;
 
     @FindBy(id = "input-quantity")
-    WebElement qty;
+    private WebElement quantityField;
 
     @FindBy(id = "button-cart")
-    WebElement addCart;
+    private WebElement addToCartButton;
 
     @FindBy(css = "div.alert.alert-success.alert-dismissible")
-    WebElement confMess;
+    private WebElement confirmationMessage;
 
     // Actions
 
     public boolean isProductExist(String productName) {
-        for (WebElement product : productTitles) {
-            if (product.getText().equalsIgnoreCase(productName)) {
-                return true;
+        try {
+            if (productTitles != null) {
+                for (WebElement product : productTitles) {
+                    if (product.getText().equalsIgnoreCase(productName)) {
+                        return true;
+                    }
+                }
             }
+        } catch (Exception e) {
+            System.out.println("Error checking product existence: " + e.getMessage());
         }
         return false;
     }
 
     public void selectProduct(String productName) {
-        for (WebElement product : productLinks) {
-            if (product.getText().equalsIgnoreCase(productName)) {
-                product.click();
-                break;
+        try {
+            if (productLinks != null) {
+                for (WebElement product : productLinks) {
+                    if (product.getText().equalsIgnoreCase(productName)) {
+                        product.click();
+                        break;
+                    }
+                }
             }
+        } catch (Exception e) {
+            System.out.println("Error selecting product: " + e.getMessage());
         }
     }
 
     public void setQuantity(String quantity) {
-        qty.clear();
-        qty.sendKeys(quantity);
+        try {
+            if (quantityField != null) {
+                quantityField.clear();
+                quantityField.sendKeys(quantity);
+            }
+        } catch (Exception e) {
+            System.out.println("Error setting quantity: " + e.getMessage());
+        }
     }
 
     public void addToCart() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(addCart)).click();
+        try {
+            if (addToCartButton != null) {
+                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+                wait.until(ExpectedConditions.elementToBeClickable(addToCartButton)).click();
+            }
+        } catch (Exception e) {
+            System.out.println("Error adding product to cart: " + e.getMessage());
+        }
     }
 
-    public boolean checkConfMessage() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        return wait.until(ExpectedConditions.visibilityOf(confMess)).isDisplayed();
+    public boolean checkConfirmationMessage() {
+        try {
+            if (confirmationMessage != null) {
+                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+                return wait.until(ExpectedConditions.visibilityOf(confirmationMessage)).isDisplayed();
+            }
+        } catch (Exception e) {
+            System.out.println("Error checking confirmation message: " + e.getMessage());
+        }
+        return false;
     }
 }

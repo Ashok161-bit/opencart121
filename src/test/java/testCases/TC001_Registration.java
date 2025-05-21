@@ -4,55 +4,52 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pageObjects.AccountRegistationPage;
+
 import pageObjects.HomePage;
 
-public class TC001_Registration extends BaseClass{
+public class TC001_Registration extends BaseClass {
 
-		
 	@Test
-	public void verify_AccountRegistrationPage() {
-	
-		logger.info("******* starting TC001_AccountRegistationTest*********");
-		
+	public void verifyAccountRegistration() {
+
+		logger.info("******* Starting TC001_AccountRegistrationTest *********");
+
 		try {
-		
-		HomePage hp= new HomePage(driver);
-		hp.clickMyAccount();
-		logger.info("Clicked on Myaccount Link");
-		hp.clickRegister();	
-		logger.info("Clicked on Registared Link");
-		AccountRegistationPage regpage=new AccountRegistationPage(driver);
-		
-		logger.info("provideing customer details");
-		regpage.setFirstname(randomString().toUpperCase());
-		regpage.setlastname(randomString().toUpperCase());
-		regpage.setEmail(randomString()+"@gmail.com");
-		regpage.setTelephone(randomNumaric());
-		
-		String password= randomAlphaNumaric();
-		regpage.setPassword(password);
-		regpage.setConfPassword(password);
-		regpage.setprivacypolicy();
-		regpage.SetButton();
-		logger.info("Validating expected Message.......");
-		
-		String confimsg=regpage.getConfirmationMsg();	
-		//Assert.assertEquals(confimsg, "Your Account Has Been Created!");
-		if(confimsg.equals("Your Account Has Been Created!")) {
-			Assert.assertTrue(true);
-		}else {
-			logger.error("Test failed....");
-			logger.debug("Debug logs...");
-			Assert.assertTrue(false);
-		}
-	}
-		catch(Exception e) {
-			
+			HomePage hp = new HomePage(driver);
+			hp.clickMyAccount();
+			logger.info("Clicked on My Account link");
+			hp.clickRegister();
+			logger.info("Clicked on Register link");
+
+			AccountRegistationPage regPage = new AccountRegistationPage(driver);
+
+			logger.info("Providing customer details");
+			regPage.setFirstName(randomString().toUpperCase());
+			regPage.setLastName(randomString().toUpperCase());
+			regPage.setEmail(randomString() + "@gmail.com");
+			regPage.setTelephone(randomNumeric());
+
+			String password = randomAlphaNumeric();
+			regPage.setPassword(password);
+			regPage.setConfPassword(password);
+			regPage.setPrivacyPolicy();
+			regPage.clickContinueButton();
+
+			logger.info("Validating expected message...");
+
+			String confirmMsg = regPage.getConfirmationMsg();
+			if (confirmMsg.equals("Your Account Has Been Created!")) {
+				Assert.assertTrue(true);
+				logger.info("Account registration test passed");
+			} else {
+				logger.error("Account registration test failed");
+				Assert.assertTrue(false);
+			}
+		} catch (Exception e) {
+			logger.error("Exception occurred: " + e.getMessage());
 			Assert.fail();
 		}
-		
-		logger.info("*****Tc001_AccountRegistationtestFinished******");
-	}
 
-	
+		logger.info("******* TC001_AccountRegistrationTest Finished *********");
+	}
 }

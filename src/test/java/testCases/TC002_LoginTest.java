@@ -5,7 +5,8 @@ import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
-import pageObjects.MyaccountPage;
+import pageObjects.MyAccountPage;
+
 
 public class TC002_LoginTest extends BaseClass {
 
@@ -26,12 +27,12 @@ public class TC002_LoginTest extends BaseClass {
 	LoginPage lp= new LoginPage(driver);
 	lp.setEmail(p.getProperty("email"));
 	lp.setPassword(p.getProperty("password"));
-	lp.clicklogin();
+	lp.clickLogin();
 	
 	//My account page
 	
-	MyaccountPage macc= new MyaccountPage(driver);
-	boolean targetPage=macc.isMyAccountExist();
+	MyAccountPage macc= new MyAccountPage(driver);
+	boolean targetPage=macc.isMyAccountDisplayed();
 	
 	Assert.assertEquals(targetPage, true,"Login Failed");
 	
@@ -39,6 +40,7 @@ public class TC002_LoginTest extends BaseClass {
 	
 	}
 	catch(Exception e) {
+		logger.error("Exception occurred: " + e.getMessage());
 		Assert.fail();
 	}
 	}

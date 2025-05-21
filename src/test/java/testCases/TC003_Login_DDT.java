@@ -6,75 +6,59 @@ import org.testng.annotations.Test;
 
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
-import pageObjects.MyaccountPage;
+import pageObjects.MyAccountPage;
 import utilities.DataProviders;
 
 public class TC003_Login_DDT extends BaseClass {
 
-/* data is vaid -login Success -test pass-logout
- * data is valid  -login failed -test fail
- * 
- * data is invalid  -login success  -test fail
- * data is invalid -- login failed =test pass
- * 
- */
-	@Test(dataProvider="LoginData",dataProviderClass=DataProviders.class) //getting data provider from different class that reason data.class
-	public void Verify_LoginDDT(String email, String pwd,String exp)  {
-		
-		logger.info("******* Starting TC_003_LogingDDT*****");
-		//homepa ge
-		
-		try {
-			
-		
-		HomePage hp= new HomePage(driver);
-		hp.clickMyAccount();
-		hp.clickLogin();
-		
-		//Login Page
-		LoginPage lp= new LoginPage(driver);
-		lp.setEmail(email);
-		lp.setPassword(pwd);
-		lp.clicklogin();
-		
-		//My account page
-		
-		MyaccountPage macc= new MyaccountPage(driver);
-		boolean targetPage=macc.isMyAccountExist();
-		
-		
-		if(exp.equalsIgnoreCase("Valid"))
-		{
-			
-			if(targetPage==true)
-			{
-				macc.ClickLogout();
-				Assert.assertTrue(true);
-				
-			}
-			
-			else {
-				Assert.assertTrue(false);
-			}
-		}
-		
-		if(exp.equalsIgnoreCase("Invalid")) {
-			
-			if(targetPage==true) {
-				
-				macc.ClickLogout();
-				Assert.assertTrue(true);
-			}
-			else {
-				Assert.assertTrue(true);
-			}
-		}
-		}catch(Exception e) {
-			Assert.fail();
-		}
-		logger.info("******* Finished TC_003_LogingDDT*****");
-	}
+	/*
+	 * Data is valid - login success - test pass - logout
+	 * Data is valid - login failed - test fail
+	 * Data is invalid - login success - test fail
+	 * Data is invalid - login failed - test pass
+	 */
 
-	
-	
+	@Test(dataProvider = "LoginData", dataProviderClass = DataProviders.class)
+	public void Verify_LoginDDT(String email, String pwd, String exp) {
+
+		logger.info("******* Starting TC_003_LoginDDT *******");
+
+		try {
+			// Navigate to Login Page
+			HomePage hp = new HomePage(driver);
+			hp.clickMyAccount();
+			hp.clickLogin();
+
+			// Perform Login
+			LoginPage lp = new LoginPage(driver);
+			lp.setEmail(email);
+			lp.setPassword(pwd);
+			lp.clickLogin();
+
+			// Verify Login
+			MyAccountPage macc = new MyAccountPage(driver);
+			boolean targetPage = macc.isMyAccountDisplayed();
+
+			if (exp.equalsIgnoreCase("Valid")) {
+				if (targetPage) {
+					macc.clickLogout();
+					Assert.assertTrue(true, "Login successful with valid credentials");
+				} else {
+					Assert.assertTrue(false, "Login failed with valid credentials");
+				}
+			} else if (exp.equalsIgnoreCase("Invalid")) {
+				if (targetPage) {
+					macc.clickLogout();
+					Assert.assertTrue(false, "Login successful with invalid credentials");
+				} else {
+					Assert.assertTrue(true, "Login failed with invalid credentials");
+				}
+			}
+		} catch (Exception e) {
+			logger.error("Exception occurred: " + e.getMessage());
+			Assert.fail("Test case failed due to an exception");
+		}
+
+		logger.info("******* Finished TC_003_LoginDDT *******");
+	}
 }
